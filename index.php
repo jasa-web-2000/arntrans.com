@@ -4,16 +4,17 @@
 $domain = 'https://arntrans.com/';
 $brand = 'ARN Trans';
 // $logoShared = 'src/img/harga-travel.jpg';
-$logo = 'src/img/logo.webp';
+$logo = 'src/img/logo-2.webp';
 $logoPanjang = 'src/img/logo.webp';
-$title = $brand . " menawarkan Travel Jawa Bali 24 Jam";
-$desc = $brand . " menawarkan Travel di daerah Surabaya, Bali, Denpasar, Kediri, Mojokerto, dan Jombang.";
-$telp = '0895-4028-82198';
-// $telp2 = '0857-9190-4615';
-$alamat = 'Jl. Tribuana Tungga Dewi Jalan, Mojokerep, Menanggal, Kec. Mojosari, Kabupaten Mojokerto, Jawa Timur 61382';
+$title = $brand . " - Travel Cirebon Jakarta, Bogor, Depok, Tangerang, Bekasi, Bandara";
+$desc = $brand . " menawarkan Travel Cirebon Jakarta, Bogor, Depok, Tangerang, Bekasi, Bandara dengan layanan terbaik, armada nyaman, dan harga terjangkau. Pesan sekarang untuk perjalanan yang menyenangkan!";
+$telp = '0851-2101-7724';
+$telp2 = '0859-3006-6337';
+$alamat = 'Jl. Mutiara Gading City, Babelan Kota, Kec. Tarumajaya, Kabupaten Bekasi, Jawa Barat 17215';
 
 
-$iframe = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.5159848406374!2d112.53856177402264!3d-7.518558092494284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780b48c7c3c505%3A0xc814eb8e1dc815d6!2sJl.%20Tribuana%20Tungga%20Dewi%2C%20Mojokerep%2C%20Menanggal%2C%20Kec.%20Mojosari%2C%20Kabupaten%20Mojokerto%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1770794146576!5m2!1sid!2sid';
+$iframe = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.696525735943!2d107.00602405395401!3d-6.152975924314718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698a28b64f21cf%3A0x9a5356271067dab8!2sJl.%20Mutiara%20Gading%20City%2C%20Kabupaten%20Bekasi%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1772445088249!5m2!1sid!2sid';
+
 
 function res_telp($telp)
 {
@@ -25,12 +26,12 @@ $res_telp = res_telp($telp);
 $res_telp2 = isset($telp2) ? res_telp($telp2) : null;
 $link_telp = 'tel:' . $res_telp;
 $link_telp2 = isset($telp2) ? 'tel:' . $res_telp : null;
-$link_whatsapp = 'https://wa.me/' . res_telp($telp) .
-  '?text=' . urlencode('Halo admin ' . $brand);
+$link_whatsapp = "https://wa.me/" . res_telp($telp) .
+  "?text=" . urlencode("Halo admin " . $brand . "\n\n" . $domain);
 
 $link_whatsapp2 = isset($telp2)
-  ? 'https://wa.me/' . res_telp($telp2) .
-  '?text=' . urlencode('Halo admin ' . $brand)
+  ? "https://wa.me/" . res_telp($telp2) .
+  "?text=" . urlencode("Halo admin " . $brand . "\n\n" . $domain)
   : null;
 
 $menu = [
@@ -55,53 +56,47 @@ $menu = [
 
 
 $rute = [
-  "Travel Surabaya Bali",
-  "Travel Surabaya Denpasar",
-  "Travel Kediri Denpasar",
-  "Travel Kediri Bali",
-  "Travel Kediri Surabaya",
-  "Travel Mojokerto Denpasar",
-  "Travel Mojokerto Bali",
-  "Travel Jombang Denpasar",
-  "Travel Jombang Bali",
-
-  "Travel Bali Surabaya",
-  "Travel Denpasar Surabaya",
-  "Travel Denpasar Kediri",
-  "Travel Bali Kediri",
-  "Travel Surabaya Kediri",
-  "Travel Denpasar Mojokerto",
-  "Travel Denpasar Jombang",
-  "Travel Bali Mojokerto",
-  "Travel Bali Jombang",
+  "Travel Cirebon Jakarta",
+  "Travel Cirebon Bogor",
+  "Travel Cirebon Depok",
+  "Travel Cirebon Tangerang",
+  "Travel Cirebon Bekasi",
+  "Travel Cirebon Bandara",
+  // PP
+  "Travel Jakarta Cirebon",
+  "Travel Bogor Cirebon",
+  "Travel Depok Cirebon",
+  "Travel Tangerang Cirebon",
+  "Travel Bekasi Cirebon",
+  "Travel Bandara Cirebon",
 ];
 
 $kota = [
   [
-    'Denpasar',
-    'denpasar.jpg',
+    'Cirebon',
+    'cirebon.jpg',
   ],
   [
-    'Bali',
-    'bali.jpg',
+    'Bekasi',
+    'bekasi.jpg',
   ],
   [
-    'Surabaya',
-    'surabaya.jpg',
+    'Jakarta',
+    'jakarta.jpg',
   ],
   [
-    'Kediri',
-    'kediri.jpg',
+    'Bandara',
+    'bandara.jpg',
   ],
 ];
 
 $galeri = [
-  '1.jpeg',
-  '2.jpeg',
-  '3.jpeg',
-  '4.jpg',
-  '5.jpg',
-  '6.jpg',
+  'default/1.jpg',
+  'default/2.jpg',
+  'default/3.jpg',
+  'default/4.jpg',
+  'default/5.jpg',
+  'default/6.jpg',
 ];
 
 // $harga = [
@@ -112,27 +107,11 @@ $galeri = [
 
 
 $keunggulan = [
-  [
-    '🚗',
-    'Armada Nyaman & Terawat',
-    'Kami menggunakan armada mobil yang bersih, wangi, dan selalu dalam kondisi prima. Setiap kendaraan menjalani perawatan rutin untuk memastikan perjalanan Anda aman dan nyaman dari penjemputan hingga tiba di tujuan.'
-  ],
+  ['🚗', 'Armada Nyaman & Terawat', 'Kami menggunakan armada mobil yang bersih, wangi, dan selalu dalam kondisi prima. Setiap kendaraan menjalani perawatan rutin untuk memastikan perjalanan Anda aman dan nyaman dari penjemputan hingga tiba di tujuan.'],
+  ['👨‍✈️', 'Driver Profesional & Berpengalaman', 'Pengemudi kami ramah, berpengalaman, dan memahami rute terbaik untuk perjalanan yang lebih cepat dan efisien. Keselamatan dan kenyamanan penumpang adalah prioritas utama kami.'],
+  ['🏠', 'Layanan Door to Door', 'Nikmati kemudahan dijemput dan diantar langsung ke alamat tujuan tanpa perlu repot ke terminal. Praktis, hemat waktu, dan lebih nyaman.'],
+  ['💰', 'Harga Terjangkau & Transparan', 'Tanpa biaya tersembunyi. Anda mendapatkan layanan premium dengan harga yang kompetitif dan sebanding dengan kenyamanan yang kami berikan.'],
 
-  [
-    '👨‍✈️',
-    'Driver Profesional & Berpengalaman',
-    'Pengemudi kami ramah, berpengalaman, dan memahami rute terbaik untuk perjalanan yang lebih cepat dan efisien . Keselamatan dan kenyamanan penumpang adalah prioritas utama kami.'
-  ],
-  [
-    '🏠',
-    'Layanan Door to Door',
-    'Nikmati kemudahan dijemput dan diantar langsung ke alamat tujuan tanpa perlu repot ke terminal. Praktis, hemat waktu, dan lebih nyaman.'
-  ],
-  [
-    '💰',
-    'Harga Terjangkau & Transparan',
-    'Tanpa biaya tersembunyi. Anda mendapatkan layanan premium dengan harga yang kompetitif dan sebanding dengan kenyamanan yang kami berikan.'
-  ],
 ];
 ?>
 
@@ -206,7 +185,7 @@ $keunggulan = [
           <a href="<?= $domain ?>">
             <img
               src="<?= $domain . $logoPanjang ?>"
-              class="w-14 md:w-[70px] rounded m-auto"
+              class="w-28 rounded m-auto"
               alt="logo" />
           </a>
         </div>
@@ -501,10 +480,10 @@ $keunggulan = [
     </section>
 
     <!-- Jadwal -->
-    <div class="container mt-10">
+    <div class="container my-10">
       <a href="<?= $link_whatsapp ?>" target="_blank" rel="nofollow">
 
-        <img src="<?= $domain ?>src/img/Mosi-Tour-Travel.webp" class="rounded-xl shadow-md w-full aspect-[16/6]" alt="<?= $title ?>">
+        <img src="<?= $domain ?>src/img/arn-trans.webp" class="rounded-xl shadow-md w-full" alt="<?= $title ?>">
       </a>
     </div>
 
@@ -514,9 +493,9 @@ $keunggulan = [
       <div class="container">
         <div class="py-20">
           <div class="text-center inner-container">
-            <h2 class="line-h2">Destinasi Populer</h2>
+            <h2 class="line-h2">Daerah Travel Populer</h2>
             <p class="desc">
-              Kunjungi destinasi-destinasi terkenal bersama <?= $brand ?>, nikmati pengalaman
+              Kunjungi daerah-daerah terkenal mengunakan Travel Cirebon bersama <?= $brand ?>, nikmati pengalaman
               travel yang tak terlupakan dan menyenangkan!
             </p>
           </div>
@@ -595,7 +574,7 @@ $keunggulan = [
     <section class="container my-20 mt-10" id="rute-travel">
       <div class="">
         <div class="text-center inner-container">
-          <h2 class="line-h2">Rute <?= $brand ?></h2>
+          <h2 class="line-h2">Rute Travel Cirebon <?= $brand ?></h2>
           <p class="desc">
             <?= $desc; ?>
           </p>
@@ -603,7 +582,16 @@ $keunggulan = [
         <div
           class="grid grid-cols-12 gap-x-6 gap-y-8 [&>div]:col-span-12 [&>div]:sm:col-span-6 [&>div]:md:col-span-4 [&>div]:lg:col-span-3 [&>div]:rounded-xl [&>div]:border-t-8 [&>div]:border-primary [&>div]:shadow-xl [&>div]:overflow-hidden [&>div]:bg-white [&>div]:relative [&>div>a]:absolute [&>div>a]:inset-0 [&_img]:border-b [&>div_div]:p-4 [&>div_div]:md:px-5 [&>div_div]:lg:px-6 [&_h3]:line-clamp-3 [&_h3]:text-[15px] [&_h3]:font-semibold [&_h3]:text-slate-700 [&_h3]:z-10 [&_h3]:relative [&_h3]:cursor-pointer">
           <?php if (count($rute) > 0) : ?>
-            <?php foreach ($rute as $item) : ?>
+            <?php foreach ($rute as $key => $item) : ?>
+              <?php
+              if (($key + 1) % 3 == 1) {
+                $imgRute = "rute-1.webp";
+              } elseif (($key + 1) % 3 == 2) {
+                $imgRute = "rute-2.webp";
+              } else {
+                $imgRute = "rute-3.webp";
+              }
+              ?>
               <div>
                 <a
                   target="_blank"
@@ -611,7 +599,7 @@ $keunggulan = [
                   href="<?= $link_whatsapp ?>!"
                   class=""></a>
                 <img
-                  src="<?= $domain ?>src/img/rute.webp"
+                  src="<?= $domain ?>src/img/<?= $imgRute ?>"
                   width="100%"
                   height="100%"
                   loading="lazy"
@@ -619,10 +607,10 @@ $keunggulan = [
                   class="" />
                 <div class="">
                   <h3 class="!line-clamp-1 block whitespace-nowrap">
-                    <?= $item ?> PP
+                    <?= $item ?>
                   </h3>
-                  <p class="text-sm opacity-80 my-2 !line-clamp-3">Reservasi tiket <strong><?= $item ?></strong> PP dengan sistem door to door dan perjalanan via tol.</p>
-                  <a target="_blank" href="<?= $link_whatsapp ?>" class="bg-primary hover:!bg-primary-hover text-slate-100 block text-center text-sm mt-3 rounded p-2 relative">Pesan Travel</a>
+                  <p class="text-sm opacity-80 my-2 !line-clamp-3"><strong><?= $item ?></strong> door to door dan terjangkau. Pesan <?= $item ?> sekarang!</p>
+                  <a rel="noopener nofollow" target="_blank" href="<?= $link_whatsapp ?>" class="bg-primary hover:!bg-primary-hover text-slate-100 block text-center text-sm mt-3 rounded p-2 relative">Pesan Travel</a>
                 </div>
               </div>
             <?php endforeach; ?>
@@ -644,12 +632,12 @@ $keunggulan = [
           </div>
           <div class="col-span-full md:!col-span-1  ">
             <div class="text inner-container">
-              <h2 class="line-h2 left-12 text-slate-50 before:!bg-blue-300 after:!bg-blue-300">Tentang Kami</h2>
+              <h2 class="line-h2 left-12 text-slate-50 before:!bg-blue-300 after:!bg-blue-300">Tentang <?= $brand ?> Travel</h2>
               <p class="desc !text-slate-300 !mb-5">
-                <?= $desc ?> Kami travel Surabaya, Bali, Denpasar, Kediri, Mojokerto, Jombang dan sekitarnya. Melayani jemput antar ke lokasi (door to door service). Dengan harga yg murah, dan driver yg berpemgalaman.
+                <?= $desc ?>
               </p>
               <p class="desc !text-slate-300 !mb-5">
-                Yuk booking sekarang, bayarnya nanti bisa cash setelah sampai di tujuan.
+                Nikmati perjalanan nyaman tanpa ribet dengan Travel Cianjur Jabodetabek, terutama rute <a class="underline" rel="noopener nofollow" target="_blank" href="https://biotrans.id/rute/travel-cirebon-jakarta">Travel Cirebon Jakarta</a>! Jemput dari rumah, antar sampai tujuan di Jabodetabek, aman, nyaman, dan tepat waktu. Tanpa antre tiket, tanpa pindah kendaraan, travel cepat dan praktis setiap hari.
               </p>
               <ul class="!list-item !list-disc text-slate-300 ml-5">
                 <li>Travel Reguler</li>
@@ -679,12 +667,11 @@ $keunggulan = [
           class="bg-gradient-to-tr from-primary to-primary-hover rounded-3xl p-8 text-center sm:p-16 md:px-24 md:py-20 lg:px-28">
           <div class="max-w-2xl mx-auto">
             <h2 class="text-white text-4xl">
-              Apakah anda ingin perjalanan travel yang aman dan cepat?
+              Apakah anda ingin Menjadwalkan Travel Cirebon Jabodetabek?
             </h2>
             <p
               class="max-w-lg text-base text-indigo-100 mx-auto mt-4 sm:text-lg">
-              Hubungi kami dan konsultasikan kebutuhan travel murah anda sekarang juga, kami siap
-              membantu anda 24 jam.
+              Hubungi kami sekarang dan konsultasikan kebutuhan travel murah Anda! Layanan siap membantu 24 jam, jemput dari rumah, antar sampai tujuan.
             </p>
           </div>
           <div
@@ -774,10 +761,10 @@ $keunggulan = [
       <div class="container">
         <div class="">
           <div class="text-center inner-container">
-            <h2 class="line-h2">Galeri Travel</h2>
+            <h2 class="line-h2">Galeri Mobil Travel Cirebon</h2>
             <p class="desc">
               Galeri ini menampilkan berbagai unit, foto, dan momen berharga
-              yang merefleksikan perjalanan kami.
+              yang merefleksikan travel dari <?= $brand ?>.
             </p>
           </div>
           <div
@@ -814,9 +801,9 @@ $keunggulan = [
       <div class="container">
         <div class="">
           <div class="text-center inner-container">
-            <h2 class="line-h2 text-white">Keunggulan Kami</h2>
+            <h2 class="line-h2 text-white">Keunggulan Menggunakan Travel Kami</h2>
             <p class="desc !text-slate-300 !mb-5">
-              Nikmati layanan transportasi yang mengutamakan kenyamanan, keamanan, dan ketepatan waktu. Kami hadir untuk memberikan pengalaman perjalanan yang lebih praktis dan menyenangkan.
+              Nikmati perjalanan nyaman, aman, dan tepat waktu. Layanan kami membuat perjalanan Anda lebih praktis dan menyenangkan.
             </p>
           </div>
           <div
@@ -891,7 +878,7 @@ $keunggulan = [
                       alt="bintang" />
                   </div>
                   <p class="testimoni">
-                    Saya menggunakan jasa Travel <?= $brand ?> untuk rute <a href="https://jasatravel.web.id/rute-travel/dari-bali/ke-kota-surabaya/51/3578" class="underline" target="_blank">Travel Bali Surabaya</a>. Pelayanan sangat memuaskan, armada nyaman, tepat waktu, dan staf ramah. Pengalaman perjalanan yang menyenangkan dan saya sangat puas!
+                    Saya menggunakan jasa Travel <?= $brand ?> untuk rute <a href="https://jasatravel.web.id/rute-travel/dari-kota-adm-jakarta-timur/ke-kota-cirebon/3175/3274" class="underline" target="_blank"><?= $rute[6] ?></a>. Pelayanan sangat memuaskan, armada nyaman, tepat waktu, dan staf ramah. Pengalaman perjalanan yang menyenangkan dan saya sangat puas!
                   </p>
                   <div class="user-testimoni">
                     <img
@@ -1090,7 +1077,7 @@ $keunggulan = [
       <div class="container">
         <div class="">
           <div class="text-center inner-container">
-            <h2 class="line-h2">Kontak</h2>
+            <h2 class="line-h2">Kontak Travel Kami</h2>
             <p class="desc">
               Hubungi kami sekarang juga, kami siap bantu 24 jam.
             </p>
@@ -1098,16 +1085,10 @@ $keunggulan = [
           <div class="grid grid-cols-12 text-center sm:gap-y-6">
             <div
               class="p-5 py-8 col-span-full sm:col-span-4 border-b-2 sm:border-b-0 sm:border-r-2 border-primary flex flex-col justify-start items-center gap-y-5">
-              <svg
-                aria-hidden="true"
-                role="img"
 
-                viewBox="0 0 384 512"
-                xmlns="http://www.w3.org/2000/svg"
-                class="size-10">
-                <path
-                  class="fill-primary"
-                  d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+              <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-10  stroke-2 stroke-primary" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                <circle cx="12" cy="10" r="3"></circle>
               </svg>
               <h3>Alamat</h3>
               <p class="text-slate-600">
@@ -1117,13 +1098,9 @@ $keunggulan = [
 
             <div
               class="p-5 py-8 col-span-full sm:col-span-4 border-t-2 border-b-2 sm:border-t-0 sm:border-b-0 sm:border-l-2 sm:border-r-2 border-primary flex flex-col justify-start items-center gap-y-5">
-              <svg
-                viewBox="0 0 612 612"
-                xmlns="http://www.w3.org/2000/svg"
-                class="size-10">
-                <path
-                  class="fill-primary"
-                  d="M586.923 256.013c-7.959-8.24-16.655-13.074-24.53-15.916 10.798-62.807 8.812-97.901-246.643-178.322C55.771-20.07 26.688 13.85 5.274 81.869L1.622 93.471c-5.794 18.406 4.43 38.025 22.836 43.82l83.405 26.257c18.407 5.794 38.025-4.43 43.82-22.836l3.652-11.602c16.587-52.69 97.773-28.905 143.76-14.428 45.986 14.477 126.155 41.49 109.568 94.18l-3.653 11.601c-5.794 18.406 4.43 38.025 22.836 43.82l83.405 26.257c18.406 5.795 38.025-4.429 43.82-22.835l2.369-8.038c4.933 2.036 10.229 5.149 15.123 10.215 17.553 18.182 23.378 53.308 16.842 101.589-11.335 83.657-44.21 113.537-79.221 123.481v-14.553c0-14.775-3.693-29.4-11.181-42.179-34.94-59.797-84.556-112.856-147.598-159.626v-35.34c0-2.745-2.246-4.992-4.991-4.992h-51.862a4.975 4.975 0 0 0-4.992 4.992v35.139h-59.199v-35.139a5.007 5.007 0 0 0-4.992-4.992H173.46a5.007 5.007 0 0 0-4.992 4.992v35.139C105.326 325.264 55.661 378.322 20.67 438.22c-7.487 12.778-11.18 27.403-11.18 42.177v32.894c0 46.87 37.985 84.855 84.854 84.855h330.984c46.136 0 83.581-36.824 84.745-82.679 56.115-13.143 87.95-58.928 99.111-141.316 7.497-55.335.005-95.082-22.261-118.138zM346.544 481.271l-33.304-11.858c3.533-7.12 5.57-15.115 5.57-23.606 0-29.35-23.809-53.159-53.208-53.159-29.35 0-53.209 23.81-53.209 53.159 0 29.4 23.859 53.21 53.209 53.21a52.961 52.961 0 0 0 29.386-8.859l18.266 30.026c-13.76 8.835-30.087 14.022-47.652 14.022-48.817 0-88.349-39.582-88.349-88.398 0-48.767 39.533-88.349 88.349-88.349s88.399 39.583 88.399 88.349c0 12.621-2.69 24.6-7.457 35.463z"></path>
+
+              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="size-10 stroke-2 stroke-primary" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
               </svg>
               <h3>Telpon</h3>
               <p class="text-slate-600"><?= $telp ?></p>
@@ -1149,7 +1126,7 @@ $keunggulan = [
 
             </div>
 
-            <!-- <a href="https://www.instagram.com/traveldenpasarsingaraja?igsh=MWVlc3NrbnN4bnlpdw==" target="_blank"
+            <a href="https://www.instagram.com/arn_trans?igsh=ZHp0dHpuczF6cDR0" target="_blank"
               class="p-5 py-8 col-span-full sm:col-span-4 border-b-2 sm:border-b-0 sm:border-r-2 border-primary flex flex-col justify-start items-center gap-y-5">
 
 
@@ -1161,34 +1138,29 @@ $keunggulan = [
 
               <h3>Instagram</h3>
               <p class="text-primary underline line-clamp-1 break-all">
-                @traveldenpasarsingaraja
+                @arn_trans
               </p>
-            </a> -->
+            </a>
 
-            <!-- <div
+            <div
               class=" col-span-full sm:col-span-4 sm:border-t-0 sm:border-b-0 sm:border-l-2 sm:border-r-2 border-primary flex flex-col justify-start items-center gap-y-5">
-            </div> -->
+            </div>
 
-            <!-- <a target="_blank" href="https://www.facebook.com/trvel.singaraja.dps"
+            <a target="_blank" href="https://www.tiktok.com/@arn_trans?_r=1&_t=ZS-94GMADae4LE"
               class="p-5 py-8 col-span-full sm:col-span-4 border-t-2 sm:border-t-0 sm:border-l-2 border-primary flex flex-col justify-start items-center gap-y-5">
-              <svg
-                aria-hidden="true"
-                role="img"
 
-                viewBox="0 0 448 512"
-                xmlns="http://www.w3.org/2000/svg"
-                class="size-10">
-                <path class="fill-primary" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+              <svg viewBox="0 0 256 256" class="size-10" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-primary" d="M224,74a50.06,50.06,0,0,1-50-50,6,6,0,0,0-6-6H128a6,6,0,0,0-6,6V156a22,22,0,1,1-31.43-19.89A6,6,0,0,0,94,130.69V88a6,6,0,0,0-7-5.91C52.2,88.28,26,120.05,26,156a74,74,0,0,0,148,0V112.93A101.28,101.28,0,0,0,224,126a6,6,0,0,0,6-6V80A6,6,0,0,0,224,74Zm-6,39.8a89.13,89.13,0,0,1-46.5-16.69A6,6,0,0,0,162,102v54a62,62,0,0,1-124,0c0-27.72,18.47-52.48,44-60.38v31.53A34,34,0,1,0,134,156V30h28.29A62.09,62.09,0,0,0,218,85.71Z"></path>
               </svg>
-              <h3>Facebook</h3>
-              <p class="text-primary underline line-clamp-1 break-all" target="_blank" href="https://www.facebook.com/trvel.singaraja.dps">@trvel.singaraja.dps</p>
+              <h3>Tiktok</h3>
+              <p class="text-primary underline line-clamp-1 break-all">@arn_trans</p>
 
-            </a> -->
+            </a>
           </div>
         </div>
         <?php if ($iframe) :  ?>
           <iframe
-            title="alamat"
+            title="alamat garasi travel"
             src="<?= $iframe ?>"
             allowfullscreen=""
             class="w-full h-60 border-4 brightness-75 hover:brightness-100 transition-all duration-700 shadow-lg rounded-lg border-primary"
