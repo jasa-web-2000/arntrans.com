@@ -136,7 +136,7 @@ $keunggulan = [
       j.src =
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-N82MWHS9');
+    })(window, document, 'script', 'dataLayer', 'GTM-KGRF2GHZ');
   </script>
   <!-- End Google Tag Manager -->
   <meta name="author" content="Dion Zebua" />
@@ -174,7 +174,7 @@ $keunggulan = [
 
 <body class="font-poppins text-slate-700 overflow-x-hidden">
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N82MWHS9"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGRF2GHZ"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
