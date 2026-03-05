@@ -9,11 +9,11 @@ $logoPanjang = 'src/img/logo.webp';
 $title = $brand . " - Travel Cirebon Jakarta, Bogor, Depok, Tangerang, Bekasi, Bandara";
 $desc = $brand . " menawarkan Travel Cirebon Jakarta, Bogor, Depok, Tangerang, Bekasi, Bandara dengan layanan terbaik, armada nyaman, dan harga terjangkau. Pesan sekarang untuk perjalanan yang menyenangkan!";
 $telp = '0851-2101-7724';
-$telp2 = '0859-3006-6337';
-$alamat = 'Jl. Mutiara Gading City, Babelan Kota, Kec. Tarumajaya, Kabupaten Bekasi, Jawa Barat 17215';
+// $telp2 = '0859-3006-6337';
+$alamat = 'Jl. Mutiara Gading City Jl. Desa No.71, RT.2/RW.03, Setia Asih, Kec. Tarumajaya, Kota Bks, Jawa Barat 17215';
 
 
-$iframe = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.696525735943!2d107.00602405395401!3d-6.152975924314718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698a28b64f21cf%3A0x9a5356271067dab8!2sJl.%20Mutiara%20Gading%20City%2C%20Kabupaten%20Bekasi%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1772445088249!5m2!1sid!2sid';
+$iframe = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7594748292363!2d107.0060338!3d-6.1629584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698ba503704a05%3A0x388e435972ef8cc8!2sDapoer%20Kue%20Cendana!5e0!3m2!1sid!2sid!4v1772699235592!5m2!1sid!2sid';
 
 
 function res_telp($telp)
